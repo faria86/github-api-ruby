@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby application using Github API
 
-Things you may want to cover:
+ruby v3.0.0
 
-* Ruby version
+Rails v6.1.1
 
-* System dependencies
+Gem ‘Excon’ to perform HTTP calls
 
-* Configuration
+Used bootstrap-v5.0.0 and SASS
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Deployed on Heroku: https://githubapi-search-ruby.herokuapp.com/
