@@ -25,7 +25,7 @@ gem 'bootsnap', '>= 1.4.4', require: false
 #excon for http calls
 gem 'excon'
 # Bootstrap
-gem 'bootstrap', '~> 4.0.0'
+gem 'bootstrap', '~> 5.0.0.beta1'
 gem 'jquery-rails'
 
 

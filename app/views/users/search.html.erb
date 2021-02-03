@@ -1,18 +1,38 @@
 <div class="container">
-  <div class="row mt-5">
-    <div class="col-lg-6">
-        <!-- add user avatar -->  
+    <div class="row mt-5">
+        <div class="col-lg-6">
+            <!-- add user avatar -->
+        </div>
+
+        <div class="col-lg-6">
+            <h4>User info</h4>
+            <dl>
+                <dt>Name:</dt>
+                <%= link_to(@user['name'], @user['html_url']) %><br />
+
+                <%= image_tag(@user['avatar_url'], :alt => "avatar") %>
+
+                <dt>Followers:</dt>
+                <%= @user['followers'] %>
+
+                <dt>Following:</dt>
+                <%= @user['following'] %>
+
+                <div class="row">
+                    <table class="table table-striped">
+                        <tr>
+                            <th>Name</th>
+                            <th>Url</th>
+                        </tr>
+                        <% @repos.each do |repo| %>
+                        <tr>
+                            <td><%= repo['name'] %></td>
+                            <td><%= link_to(repo['html_url'],repo['html_url']) %></td>
+                        </tr>
+                        <% end %>
+                    </table>
+                </div>
+            </dl>
+        </div>
     </div>
-
-    <div class="col-lg-6">
-        <h4>User info</h4>
-        <dl>
-            <dt>Name</dt>
-            <dd><%= @user['name'] %></dd>
-
-            <!-- add user (more) info -->
-
-        </dl>
-    </div>
-  </div>
 </div>
