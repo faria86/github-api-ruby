@@ -16,3 +16,37 @@
  
  @import "bootstrap";
  
+ .index {
+
+    img {
+        display: block;
+        width: 10%;
+        margin: 20px auto 0 auto;
+    }
+
+    h1 {
+        justify-content: center;
+        display: flex;
+        padding-top: 50px;
+    }
+
+    .btn-success {
+        margin-top: 20px;
+    }
+}
+
+.container {
+    
+     .rounded-circle{
+         max-width: 350px;
+         margin-bottom: 30px;
+     }
+
+     .row {
+         margin-top: 50px;
+     }
+
+     .follow {
+         margin-top: 10px;
+     }
+}
