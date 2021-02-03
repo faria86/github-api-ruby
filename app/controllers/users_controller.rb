@@ -4,6 +4,10 @@ class UsersController < ApplicationController
 
   def search
     @user = find_user(params[:username])
+    unless @user
+      flash[:alert] = 'User not found'
+      return render action: :index
+    end
   end
 
   def find_user(username)
