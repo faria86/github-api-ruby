@@ -3,12 +3,11 @@
         <div class="col-lg-4">
             <%= image_tag(@user['avatar_url'], :alt => "avatar", :class => "rounded-circle") %></br>
             <div class="credentials">
-                <%= link_to(@user['name'], @user['html_url']) %><br />
-                <%= @user['login']%></br>
+                <%= link_to(@user['name'], @user['html_url'], target: '_blank', :class => "link") %><br />
+                <%= @user['login'] %></br>
             </div>
                     
             <div class="follow">
-                <img src="/user.png" width="20" height="20" alt="userlogo" />
                 <%= @user['followers'] %>
                 <span>Followers</span>
                 <span>.</span>
@@ -17,8 +16,10 @@
             </div> 
         </div> 
         <div class="col-lg-8">
-            <h2>List of Repositories</h2>
-            <span>( <%= @user['public_repos'] %> )</span>
+            <span class="repos-title">List of Repositories</span>
+            <span class="num-repos">
+                <%= @user['public_repos'] %>
+            </span>
             <table class="table table-striped">
                 <tr>
                     <th>Name</th>

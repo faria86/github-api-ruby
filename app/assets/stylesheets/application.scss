@@ -46,4 +46,24 @@
      .follow {
          margin-top: 10px;
      }
+
+     .link {
+         text-decoration: none;
+         color:black;
+         font-size: 2rem;
+         font-weight: bold;
+     }
+
+     .num-repos,
+     .follow span {
+         color: #C0C0C0;
+     }
+
+     .num-repos {
+        display: inline;
+     }
+
+     .repos-title {
+         font-size: 1.5rem;
+     }
 }
