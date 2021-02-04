@@ -61,9 +61,19 @@
 
      .num-repos {
         display: inline;
+        margin-left: 5px;
+        font-size: 24px;
      }
 
      .repos-title {
          font-size: 1.5rem;
+     }
+
+     .table-striped {
+         margin-top: 20px;
+     }
+
+     .col-lg-4 {
+         text-align: center;
      }
 }
